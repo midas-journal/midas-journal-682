@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- created on victoria.nlm.nih.gov at Thu Apr 30 13:35:22 2009
+ -->
+<output>
+<DartMeasurement name="inPlaceFilter->GetShift()" type="numeric/integer">100</DartMeasurement>
+<DartMeasurement name="inPlaceFilter->GetScale()" type="numeric/integer">1</DartMeasurement>
+<DartMeasurement name="inPlaceFilter->GetUnderflowCount()" type="numeric/integer">0</DartMeasurement>
+<DartMeasurement name="inPlaceFilter->GetOverflowCount()" type="numeric/integer">0</DartMeasurement>
+<DartMeasurement name="filter Pixel" type="numeric/integer">20</DartMeasurement>
+<DartMeasurement name="inPlaceFilter Pixel" type="numeric/integer">120</DartMeasurement>
+<DartMeasurement name="secondFilter Pixel" type="numeric/integer">70</DartMeasurement>
+<DartMeasurement name="filter container size" type="numeric/integer">0</DartMeasurement>
+<DartMeasurement name="inPlaceFilter Pixel" type="numeric/integer">120</DartMeasurement>
+<DartMeasurement name="secondFilter Pixel" type="numeric/integer">70</DartMeasurement>
+<DartMeasurement name="progress" type="text/plain">=========== Updating the in place filter. ===============
+-------- Start RandomImageSource "source" 
+-------- End RandomImageSource "source" 
+-------- Start ShiftScaleImageFilter "zeroFilter" 
+-------- End ShiftScaleImageFilter "zeroFilter" 
+-------- Start ShiftScaleImageFilter "filter" 
+-------- End ShiftScaleImageFilter "filter" 
+-------- Start ShiftScaleInPlaceImageFilter "inPlaceFilter" 
+-------- End ShiftScaleInPlaceImageFilter "inPlaceFilter" 
+=========== Updating the second filter. This should cause the first filter to re-execute ===============
+-------- Start ShiftScaleImageFilter "filter" 
+-------- End ShiftScaleImageFilter "filter" 
+-------- Start ShiftScaleImageFilter "secondFilter" 
+-------- End ShiftScaleImageFilter "secondFilter" 
+=========== Updating the in place filter again. This should only update the in place filter.  ===============
+-------- Start ShiftScaleInPlaceImageFilter "inPlaceFilter" 
+-------- End ShiftScaleInPlaceImageFilter "inPlaceFilter" 
+</DartMeasurement>
+</output>
